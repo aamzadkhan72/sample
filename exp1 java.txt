@@ -1,0 +1,23 @@
+public class Prime {
+
+    public static void main(String[] args) {
+        System.out.print("Prime numbers from 1 to 100 are:");
+        for (int i=2;i<=100;i++) {
+            if (isPrime(i)) {
+                System.out.print(I+" ");
+            }
+        }
+    }
+	public static boolean isPrime(int num) {
+        if (num<2) { // 0 and 1 are not prime numbers
+            return false;
+        }
+        // Check for divisibility from 2 up to the square root of num
+        for (int i=2;i<=Math.sqrt(num;i++) {
+            if (num%i==0) {
+                return false; // Not prime if divisible
+            }
+        }
+        return true; // Is prime if no divisors found
+    }
+}
